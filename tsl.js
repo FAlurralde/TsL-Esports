@@ -2,6 +2,10 @@ $(window).ready(function() {
     $(".tsl-bn").css({ "color": "rgb(37, 77, 255)" });
     $(".nosotros h3").css({ "letter-spacing": " 2px", "text-shadow": "2px 3px 4px rgb(32, 32, 32)" });
     $(".nosotros").css({ "background": "url(img/pubgm.jpg)", "background-size": "cover" });
+    $(".local").click(function() {
+        $(this).css("background-color", "rgb(25, 252, 5)");
+    });
+    $(".error").css({ "background-color": "red", "color": "rgb(255, 255, 255)", "font-size": "4.0rem" });
 });
 
 
@@ -45,6 +49,47 @@ function ktest() {
     var num2 = parseInt(num2);
 
 
-    result.innerText = " " + (num1 + num2) + ".";
+    result.innerText = "Cantidad total de puntos: " + (num1 + num2) + ".";
+
+}
+
+function checkForm() {
+    var nickName = document.getElementById("nickName").value;
+    var idpm = document.getElementById("idpm").value;
+    var clan = document.getElementById("clanName").value;
+    var cell = document.getElementById("cell").value;
+    var error1 = document.getElementById("errorNickName")
+    var error2 = document.getElementById("errorIdPm")
+    var error3 = document.getElementById("errorClan")
+    var error4 = document.getElementById("errorCell")
+
+    if (nickName == "") {
+        error1.innerHTML = "DEBE COMPLETAR ESTA CASILLA ";
+        return false;
+    } else if (nickName !== "") {
+        error1.innerHTML = ""
+    }
+
+    if (idpm == "") {
+        error2.innerHTML = "DEBE COMPLETAR ESTA CASILLA ";
+        return false;
+    } else if (idpm !== "") {
+        error2.innerHTML = ""
+    }
+
+    if (clan == "") {
+        error3.innerHTML = "DEBE COMPLETAR ESTA CASILLA ";
+        return false;
+    } else if (clan !== "") {
+        error3.innerHTML = ""
+    }
+
+    if (cell == "") {
+        error4.innerHTML = "DEBE COMPLETAR ESTA CASILLA ";
+        return false;
+    } else if (cell !== "") {
+        error4.innerHTML = ""
+    }
+
 
 }

@@ -73,7 +73,7 @@ body {
     border-color: rgb(53, 52, 52);
 }
 
-.sponsors {
+.sponsor-s {
     font-family: 'Black Ops One', cursive;
     color: rgb(253, 180, 44);
     text-shadow: 2px 3px 4px rgb(53, 52, 52);
@@ -125,7 +125,11 @@ body {
     font-size: 4rem;
     text-decoration: none;
     letter-spacing: 8px;
-    margin: 200px;
+}
+
+.redes-nav {
+    display: flex;
+    list-style: none;
 }
 
 .hover-button :hover {
@@ -138,6 +142,12 @@ body {
     background-color: #3b5998;
     margin: 30px;
     padding: 7px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    border-width: 8px;
+    border-color: rgb(53, 52, 52);
 }
 
 .instagram-button {
@@ -145,8 +155,49 @@ body {
     height: 100px;
     background: #f09433;
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    margin: 30px;
+    margin: 50px;
     padding: 7px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    border-width: 8px;
+    border-color: rgb(53, 52, 52);
+}
+
+#nav-shop {
+    padding-top: 10%;
+}
+
+.cuadro {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    border-width: 8px;
+    border-color: rgb(53, 52, 52);
+    margin: 2%;
+    padding-left: 0;
+}
+
+.compras {
+    font-family: 'Black Ops One', cursive;
+    background-color: rgb(193, 12, 182);
+    color: rgb(253, 180, 44);
+    text-shadow: 2px 3px 4px rgb(53, 52, 52);
+    font-size: 3rem;
+    margin: 4%;
+}
+
+.btn-inscrip a {
+    background-color: rgb(37, 77, 255);
+    text-shadow: 2px 3px 4px rgb(53, 52, 52);
+    color: rgb(193, 12, 182);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Black Ops One', cursive;
+    font-size: 4.0rem;
 }
 
 .killtest {
@@ -184,4 +235,19 @@ body {
     color: rgb(25, 252, 5);
     font-size: 2.0rem;
     margin: 5px;
+}
+
+#register {
+    background: url(img/027.jpg);
+    background-size: cover;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#register form {
+    font-size: 2.3rem;
+    letter-spacing: 0.1rem;
+    color: black;
+    text-shadow: 2px 3px 4px rgb(53, 52, 52);
 }

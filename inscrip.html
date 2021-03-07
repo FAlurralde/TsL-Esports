@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es-la ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TsL-Esports registro</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="tslcss.css">
+
+</head>
+
+<body id=register>
+
+
+
+    <header id="header_site-logo">
+        <div>
+            <div>
+                <a href="index.html"><img src="img/TslLogo.jpg" class="header_logo" alt="TslEsports logo"> </a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+
+
+
+
+        <form id="form-register" name="ragisterToPlay" onsubmit="return checkForm(this.value);" action="play.html">
+
+            <label for="nickName"> Indique su NickName: </label>
+            <br>
+            <input type="text" id="nickName" class="local" maxlength=40 size="50" placeholder="NickName">
+            <br>
+            <span id="errorNickName" class="error"></span>
+            <br>
+
+            <label for="idPm"> Complete con su ID de Pubg Moblie: </label>
+            <br>
+            <input type="text" id="idpm" class="local" minlength="10" maxlength="10" size="20" placeholder="ID PUBG MOBILE">
+            <br>
+            <span id="errorIdPm" class="error"></span>
+            <br>
+
+            <label for="clanName"> Complete con el nombre de su clan de Pubg Moblie : </label>
+            <br>
+            <input type="text" id="clanName" class="local" maxlength="100" size="50" placeholder="Nombre del Clan">
+            <br>
+            <span id="errorClan" class="error"></span>
+            <br>
+
+            <div id="div_server"> Elija un Servidor: </div>
+            <select>
+                            <option> ---</option>
+                            <option> NORTE AMÉRICA</option>
+                            <option> SUDAMÉRICA</option>
+                            <option> EUROPA</option>
+                            <option> ASIA</option>
+                            <option> SECTOR DE HACKERS</option>
+                            <option> KOREA JAPON </option>
+          </select>
+            <br>
+
+            <label for="cell"> Complete con su Número de celular: </label>
+            <br>
+            <input type="text" id="cell" class="local" maxlength="100" size="50" placeholder="Número de celular 'ej. (+54) 9 XXXXXXXXXX'  ">
+            <br>
+            <span id="errorCell" class="error"></span>
+            <br>
+
+
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox" name="I accept the Terms of Use and Privacy Policy" required> Acepto
+                <a href=""> Términos </a> y condiciones
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" required id="checkbox" name="I consent to the sending of commercial communications." required> Doy mi consentimiento para el envío de comunicaciones comerciales.
+            </div>
+
+            <br>
+
+            <button id="button2" class="button-sign-up" class="buttonPlay" class="btn btn-success"> Listo para inscribirme </button>
+
+
+            <input type="reset" value="Borrar todo">
+
+        </form>
+        <div id="error"> </div>
+
+
+    </nav>
+
+
+
+
+    <script defer src="tsl.js "></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</body>
+
+
+
+</html>

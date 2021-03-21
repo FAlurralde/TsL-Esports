@@ -93,3 +93,30 @@ function checkForm() {
 
 
 }
+
+document.querySelector(".btnpodio").addEventListener('click', podios);
+
+function podios() {
+
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "podios.json", true);
+    xhttp.send();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+
+            let resultados = JSON.parse(this.responseText);
+            let resPodio = document.querySelector("#res-podio");
+            resPodio.innerHTML = "";
+            for (let item of resultados) {
+                resPodio.innerHTML += `
+                <div>
+                 <div>${item.scrim}</div>
+                  <div>${item.lugar1}</div>
+                  <div>${item.lugar2}</div>
+                  <div>${item.lugar3}</div>
+                  <div>${item.MVP}</div> 
+                </div>`
+            }
+        }
+    }
+}

@@ -97,8 +97,8 @@ function checkForm() {
 
 
 
-window.onload = function() {
 
+window.onload = function() {
     const baseDeDatos = [{
             id: 1,
             nombre: 'Remera TsL',

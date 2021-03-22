@@ -106,84 +106,158 @@
 
 
         <div id="nav-shop" class="nav justify-content-center">
+            <div class="container">
+                <div class="cuadro compras"> TsL SHOP <br> selecciones con un click que articulo quiere y le dara el resultado de su precio</div>
 
-            <div class="cuadro"><img src="img/merchandising2.jpg" class="cuadro">
+                <div class="cuadro">
 
-                <div class="">
+                    <main id="items" class="cuadro"></main>
 
-                    <ul class="cuadro">
+                    <aside class="cuadro">
 
-                        <div class="cuadro compras"> TsL SHOP <br> selecciones con un click que articulo quiere y le dara el resultado de su precio</div>
 
-                        <li class="cuadro">
-                            <button class="compras"> Remaera TsL </button>
-                        </li>
+                        <ul id="carrito" class="list-group cuadro">
 
-                        <li class="cuadro">
-                            <button class="compras"> EcoBolsa TsL</button>
-                        </li>
+                        </ul>
 
-                        <li class="cuadro">
-                            <button class="compras"> Llaveros TsL </button>
-                        </li>
+                        <p class="text-right compras">TOTAL de su compra: <span id="total"></span>&dollar;</p>
+                        <button id="boton-vaciar" class="btn btn-danger compras">Vaciar</button>
 
-                        <li class="cuadro">
-                            <button class="compras" class="compras">Reloj TsL </button>
-                        </li>
-
-                        <li class="cuadro">
-                            <div class="compras"><span id="total"> TOTAL de su compra:  </span></div>
-                        </li>
-                    </ul>
+                    </aside>
                 </div>
             </div>
         </div>
 
         <div id="scrims">
+            <div class="cuadro-scrims">
+                <ul>
+                    <div class="cuadro-scrims">
+                        <li>
+                            <ul>
+                                <li class="scrim-data-t">
+                                    Clan:
+                                    <div class="scrim-data-t"> Todo Gamers </div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    MODO:
+                                    <div class="scrim-data"> E | M | V </div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    Comienzo:
+                                    <div class="scrim-data"> 1era 20 hs |2da 21 hs | 3era 22 hs </div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    Fecha:
+                                    <div class="scrim-data"> 12/02/2020 </div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    Limite de Squad:
+                                    <div class="scrim-data"> 20 squads </div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    Transmisión:
+                                    <div class="scrim-data"> NO </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="cuadro-scrims">
+                        <li>
+                            <ul>
+                                <li class="scrim-data-t">
+                                    Clan:
+                                    <div class="scrim-data-t"> PMPL</div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    MODO:
+                                    <div class="scrim-data"> E | E </div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    Comienzo:
+                                    <div class="scrim-data"> 1era 15 hs |2da 15' después de la 1th </div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    Fecha:
+                                    <div class="scrim-data"> 12/01/2020 </div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    Limite de Squad:
+                                    <div class="scrim-data"> 16 squads </div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    Transmisión:
+                                    <div class="scrim-data"> NO </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="cuadro-scrims">
+                        <li>
+                            <ul>
+                                <li class="scrim-data-t">
+                                    Clan:
+                                    <div class="scrim-data-t"> Master Lige </div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    MODO:
+                                    <div class="scrim-data"> E | S | M | V </div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    Comienzo:
+                                    <div class="scrim-data"> 1era 17 hs | consecutivas, 10 min una vez finalizada la anterior </div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    Fecha:
+                                    <div class="scrim-data"> 12/02/2020 </div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    Limite de Squad:
+                                    <div class="scrim-data"> 20 squads </div>
+                                </li>
+                                <li class="scrim-data-t">
+                                    Transmisión:
+                                    <div class="scrim-data"> NO </div>
+                                </li>
 
+                            </ul>
 
+                        </li>
+                    </div>
+                </ul>
 
-            <div>
-                <a id="btn-index" class="btn btn-outline-secondary" href="inscrip.html">  Inscripción </a>
-            </div>
-            <div>
-                <a id="btn-index" class="btn btn-outline-secondary btnpodio">PODIOS</a>
+                <div>
 
-                <div id="res-podio">
+                    <input type="button" class="killtest" data-toggle="modal" data-target="#exampleModa" name="name" value="Calcule los puntos de la scrim" />
 
-
-                </div>
-            </div>
-
-
-            <div>
-
-                <input type="button" class="killtest" data-toggle="modal" data-target="#exampleModal" name="name" value="Calcule los puntos de la scrim" />
-
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div id="kill-modalbody" class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="killtest-n" id="exampleModalLabel">Calcule los puntos de la scrim:</h5>
-                            </div>
-                            <div class="modal-body">
-                                <span> Complete con la cantidad total de kills de su squad dutrante la partida: </span>
-                                <input type="text" id="killstest-kills" class="killtest-n" minlength="1" maxlength="2" size="20" placeholder="KILLS" onkeyup="ktest(this.value);">
-                                <span> Complete con la posición en la que quedó su squad durante la scrim: </span>
-                                <input type="text" id="killstest-position" class="killtest-n" minlength="1" maxlength="2" size="20" placeholder="POSICIÓN" onkeyup="ktest(this.value);">
-                                <br><br>
-                                <span id="resultado"> Cantidad total de puntos:  </span>
-                                <br><br><br>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div id="kill-modalbody" class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="killtest-n" id="exampleModalLabel">Calcule los puntos de la scrim:</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <span> Complete con la cantidad total de kills de su squad dutrante la partida: </span>
+                                    <input type="text" id="killstest-kills" class="killtest-n" minlength="1" maxlength="2" size="20" placeholder="KILLS" onkeyup="ktest(this.value);">
+                                    <span> Complete con la posición en la que quedó su squad durante la scrim: </span>
+                                    <input type="text" id="killstest-position" class="killtest-n" minlength="1" maxlength="2" size="20" placeholder="POSICIÓN" onkeyup="ktest(this.value);">
+                                    <br><br>
+                                    <span id="resultado"> Cantidad total de puntos:  </span>
+                                    <br><br><br>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div>
+                    <a id="btn-index" class="btn btn-outline-secondary" href="inscrip.html">  Inscripción </a>
+                </div>
             </div>
-        </div>
 
+
+        </div>
     </nav>
 
-    <footer id="footer-tsl">
+    <footer id="footer-tsl ">
 
     </footer>
 

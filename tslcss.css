@@ -170,9 +170,8 @@ body {
 }
 
 .cuadro {
-    display: inline-block;
+    display: inline-table;
     text-align: center;
-    vertical-align: middle;
     border: 1px solid transparent;
     border-radius: 0.25rem;
     border-width: 8px;
@@ -188,6 +187,44 @@ body {
     text-shadow: 2px 3px 4px rgb(53, 52, 52);
     font-size: 3rem;
     margin: 4%;
+}
+
+#scrims {
+    text-align: center;
+}
+
+.cuadro-scrims li ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.cuadro-scrims {
+    list-style: none;
+    text-decoration: none;
+    display: inline-table;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    border-width: 8px;
+    border-color: rgb(53, 52, 52);
+    margin: 2%;
+    padding-left: 0;
+}
+
+.scrim-data-t {
+    font-size: 3rem;
+    display: block;
+    font-family: 'Black Ops One', cursive;
+    color: rgb(193, 12, 182);
+    font-size: 1.9rem;
+}
+
+.scrim-data {
+    font-size: 2rem;
+    display: block;
+    font-family: 'Black Ops One', cursive;
+    color: rgb(253, 180, 44);
+    font-size: 1.9rem;
 }
 
 .btn-inscrip a {
